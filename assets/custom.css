@@ -1,0 +1,275 @@
+/* Custom CSS for Cigarettes After Sex inspired aesthetic */
+
+/* Import Google Fonts - Montserrat for a clean sans-serif look */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Global styles */
+* {
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Background styling */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%) brightness(0.3) contrast(1.2);
+    z-index: -1;
+}
+
+.content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .title, .tab-header {
+    font-weight: 300 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase !important;
+}
+
+p, .subtitle, .tab-description {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+}
+
+/* Header styling */
+.title {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.5rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.subtitle {
+    font-size: 1.2rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Tab styling */
+.tab-header {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.tab-description {
+    font-size: 1rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    margin-bottom: 2rem !important;
+}
+
+.section-header {
+    font-size: 1.2rem !important;
+    letter-spacing: 2px !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Metric containers */
+.metric-container {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Result cards */
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.result-card {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 32%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.result-value {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.result-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Feature cards */
+.feature-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    padding: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.feature-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+/* Impact container */
+.impact-container {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    min-height: 150px;
+}
+
+.impact-value {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.impact-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.impact-equivalent {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+/* Input section */
+.input-section {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Streamlit elements custom styling */
+/* Selectbox */
+div[data-baseweb="select"] {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Slider */
+div[data-testid="stSlider"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Metrics */
+div[data-testid="stMetric"] {
+    background: transparent !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+div[data-testid="stMetricValue"] {
+    font-weight: 300 !important;
+    font-size: 1.8rem !important;
+}
+
+/* Custom styling for plots */
+.js-plotly-plot {
+    transition: transform 0.3s ease;
+}
+
+.js-plotly-plot:hover {
+    transform: scale(1.01);
+}
+
+/* Tab styling */
+button[role="tab"] {
+    letter-spacing: 2px !important;
+    font-weight: 300 !important;
+}
+
+button[role="tab"][aria-selected="true"] {
+    border-bottom-color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+button[role="tab"][aria-selected="false"] {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Number input */
+input[type="number"] {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}

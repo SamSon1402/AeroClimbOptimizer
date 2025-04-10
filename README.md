@@ -72,7 +72,7 @@ The dashboard has four main sections:
 
 ## About This Project
 
-I built this project during my internship with SITA to show how airlines can save money and reduce emissions at the same time. It's inspired by real aviation industry needs for better fuel efficiency.
+I built this project for my internship candidacy with SITA to show how airlines can save money and reduce emissions at the same time. It's inspired by real aviation industry needs for better fuel efficiency.
 
 ## License
 
